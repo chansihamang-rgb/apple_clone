@@ -1614,3 +1614,20 @@ img {
     pointer-events: auto;
 }
 
+/* Educational Banner Styles */
+.educational-banner {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-family: 'SF Pro Text', 'Myriad Set Pro', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-size: 14px;
+    position: relative;
+    z-index: 10000;
+    width: 100%;
+}
+
+.educational-banner strong {
+    color: #ffd700; /* Gold color for 'Note:' to catch attention */
+}
+
