@@ -160,6 +160,152 @@
     .footer-links {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    /* FIXES: Reset Absolute Positioning for Mobile/Tablet Stack */
+
+    /* Hero Section Reset */
+    .hero-section {
+        height: auto;
+        min-height: 500px;
+        flex-direction: column-reverse;
+        /* Stack Content on Top (visually), Background (Image) on Bottom */
+        padding-top: 60px;
+        padding-bottom: 0;
+    }
+
+    .hero-background {
+        position: relative;
+        width: 100%;
+        height: auto;
+        min-height: 250px;
+        display: flex;
+        align-items: flex-end;
+        /* Align image to bottom if needed */
+        justify-content: center;
+    }
+
+    .hero-image {
+        position: relative;
+        height: auto;
+        max-height: 350px;
+        width: auto;
+        max-width: 100%;
+        object-fit: contain;
+    }
+
+    .hero-content {
+        margin-bottom: 30px;
+    }
+
+    /* Product Section Reset (AirPods, Watch) */
+    .product-section {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-bottom: 0;
+    }
+
+    .product-content {
+        left: 0;
+        width: 100%;
+        padding: 0 20px;
+        position: relative;
+        text-align: center;
+        margin-top: 40px;
+        transform: none;
+        margin-bottom: 30px;
+        z-index: 10;
+    }
+
+    .product-logo-title {
+        justify-content: center;
+    }
+
+    .product-subtitle {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .product-links {
+        justify-content: center;
+    }
+
+    .product-image {
+        position: relative;
+        width: 100%;
+        height: auto;
+        min-height: 250px;
+        left: 0;
+        /* Reset explicitly */
+    }
+
+    .product-image img {
+        position: relative;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        max-height: 400px;
+    }
+
+    /* Reset Product Grid Cards */
+    .product-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        /* Stack from top */
+        align-items: center;
+        height: auto;
+        /* Let content dictate height */
+        min-height: 500px;
+        padding: 40px 20px;
+    }
+
+    .card-content {
+        position: relative;
+        top: 0;
+        left: 0;
+        padding-left: 0;
+        /* Remove the 35% padding */
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .card-header {
+        justify-content: center;
+    }
+
+    .card-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card-links {
+        justify-content: center;
+    }
+
+    /* Reset Card Images */
+    .card-image {
+        position: relative;
+        /* Reset absolute */
+        margin: 0;
+        width: 100%;
+        height: auto;
+        min-height: 250px;
+        bottom: auto;
+        left: 0;
+        right: 0;
+    }
+
+    .card-image img {
+        position: relative;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+        max-height: 350px;
+    }
 }
 
 /* Mobile Portrait (max-width: 768px) */
